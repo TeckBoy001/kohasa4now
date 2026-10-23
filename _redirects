@@ -1,0 +1,11 @@
+# Kohasa Group — Netlify URL routing
+/kohasaeng-homepage         /kohasaeng-homepage.html         200
+/kohasaconstruction-homepage /kohasaconstruction-homepage.html 200
+/construction-fabrication   /construction-fabrication.html   200
+/industrial-maintenance     /industrial-maintenance.html      200
+/marine-offshore            /marine-offshore.html            200
+/civil-structural           /civil-structural.html           200
+/projects-overview          /projects-overview.html          200
+/capabilities               /capabilities.html               200
+/qhse                       /qhse.html                       200
+/contact                    /contact.html                    200

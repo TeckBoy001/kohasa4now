@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kohasa Construction — Construction, Fabrication & Industrial Maintenance</title>
+<meta property="og:title" content="Kohasa Construction — Construction, Fabrication & Industrial Maintenance">
+<meta property="og:description" content="Kohasa Construction Company Limited — specialist onshore and offshore construction, fabrication, installation and industrial maintenance. 14,092m² yard, Port Harcourt, Nigeria.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Kohasa Construction Company Limited — specialist onshore and offshore construction, fabrication, installation and industrial maintenance contractor. 14,092m² fabrication yard. Port Harcourt, Nigeria.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:#0B1C35;color:#0E1823;font-family:'Barlow',sans-serif;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+
+:root{
+  --blue-900:#0B1C35;--blue-800:#102747;--blue-700:#163660;
+  --blue-600:#1C4A82;--blue-500:#2260A8;--blue-400:#3A7BC8;
+  --blue-300:#6BA3DC;--blue-100:#E8F0FA;--blue-50:#F3F7FD;
+  --ink:#0E1823;--ink2:#2D3A48;--mist:#5E6E82;--slate:#8A9AAD;
+  --silver:#C8D4E0;--bg:#F5F7FA;--bg2:#FFFFFF;--bg3:#EDF1F7;--bg4:#E2E8F2;
+  --gold:#B8860E;
+  --font-display:'Bebas Neue',sans-serif;
+  --font-condensed:'Barlow Condensed',sans-serif;
+  --font-body:'Barlow',sans-serif;
+  --border:rgba(34,96,168,0.15);
+}
+
+/* ── Top bar ── */
+.top-bar{
+  background:var(--blue-900);color:rgba(255,255,255,0.6);
+  padding:9px 64px;display:flex;align-items:center;justify-content:space-between;
+  font-family:var(--font-condensed);font-size:11px;letter-spacing:0.16em;text-transform:uppercase;
+  flex-wrap:wrap;gap:8px;
+}
+.top-bar a{color:var(--blue-300);text-decoration:none;display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(107,163,220,0.25);border-radius:2px;padding:4px 12px;transition:all 0.2s}
+.top-bar a:hover{color:#fff;border-color:rgba(107,163,220,0.6)}
+
+/* ── Nav ── */
+nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(245,247,250,0.97);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 64px;height:70px;gap:24px;
+}
+.nav-logo{display:flex;align-items:center;gap:0;text-decoration:none;flex-shrink:0}
+.nav-brand{display:flex;flex-direction:column;line-height:1}
+.nav-const-logo{height:42px;width:auto;object-fit:contain;display:block}.nav-brand-name{font-family:var(--font-condensed);font-size:12px;letter-spacing:0.2em;color:var(--mist);text-transform:uppercase}
+.nav-brand-sub{display:none}
+.nav-links{display:flex;align-items:center;gap:24px;list-style:none}
+.nav-links a{font-family:var(--font-condensed);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--mist);text-decoration:none;transition:color 0.2s;white-space:nowrap}
+.nav-links a:hover{color:var(--blue-600)}
+/* Nav dropdown */
+.nav-item{position:relative}
+.nav-item:hover .nav-dropdown{display:block}
+.nav-dropdown{
+  display:none;position:absolute;top:100%;left:0;
+  background:var(--bg2);border:1px solid var(--border);border-radius:4px;
+  min-width:220px;padding:8px 0;box-shadow:0 8px 32px rgba(22,54,96,0.12);
+  z-index:200;
+}
+.nav-dropdown a{display:block;font-family:var(--font-condensed);font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink2);text-decoration:none;padding:9px 18px;transition:all 0.15s;border-left:2px solid transparent}
+.nav-dropdown a:hover{background:var(--blue-50);border-left-color:var(--blue-500);color:var(--blue-600)}
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.nav-toggle span{display:block;width:24px;height:2px;background:var(--ink);border-radius:2px;transition:all 0.3s}
+.nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--blue-900);z-index:200;flex-direction:column;align-items:center;justify-content:center;overflow-y:auto;padding:40px 24px}
+.mobile-nav.open{display:flex}
+.mobile-nav a{font-family:var(--font-display);font-size:clamp(26px,7vw,36px);letter-spacing:0.03em;color:rgba(255,255,255,0.85);text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.07);width:100%;text-align:center;transition:color 0.2s}
+.mobile-nav a:hover,.mobile-nav a.eng{color:var(--blue-300)}
+.mobile-nav-close{position:absolute;top:20px;right:20px;background:none;border:none;cursor:pointer;color:rgba(255,255,255,0.5);font-size:26px}
+
+/* ── Hero ── */
+.hero{position:relative;min-height:90vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 64px 80px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:0.22}
+.hero-bg::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(245,247,250,0.97) 0%,rgba(245,247,250,0.6) 35%,rgba(11,28,53,0.1) 100%);
+}
+/* Blue accent bar at bottom of hero image */
+.hero-accent{position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--blue-600),var(--blue-400));z-index:3}
+.hero-content{position:relative;z-index:2;max-width:820px}
+.hero-eyebrow{font-family:var(--font-condensed);font-size:11px;letter-spacing:0.34em;text-transform:uppercase;color:var(--blue-500);display:flex;align-items:center;gap:10px;margin-bottom:18px;opacity:0;animation:fadeUp 0.7s ease forwards 0.3s}
+.hero-eyebrow::before{content:'';width:28px;height:2px;background:var(--blue-500);flex-shrink:0}
+.hero-title{font-family:var(--font-display);font-size:clamp(48px,7vw,96px);line-height:0.92;letter-spacing:0.01em;color:var(--ink);opacity:0;animation:fadeUp 0.8s ease forwards 0.5s;margin-bottom:26px}
+.hero-title em{font-style:normal;color:var(--blue-600)}
+.hero-body{font-size:16px;font-weight:300;color:var(--ink2);line-height:1.75;max-width:580px;opacity:0;animation:fadeUp 0.8s ease forwards 0.7s;margin-bottom:36px}
+.hero-stats{display:flex;gap:0;margin-bottom:36px;opacity:0;animation:fadeUp 0.8s ease forwards 0.9s;flex-wrap:wrap}
+.h-stat{border-left:2px solid var(--blue-500);padding:0 28px 0 14px;flex-shrink:0}
+.h-stat:first-child{padding-left:0;border-left:none}
+.h-stat-num{font-family:var(--font-display);font-size:clamp(26px,3vw,36px);color:var(--blue-600);line-height:1}
+.h-stat-lbl{font-family:var(--font-condensed);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--mist);margin-top:3px}
+.hero-actions{display:flex;gap:14px;opacity:0;animation:fadeUp 0.8s ease forwards 1.1s;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-condensed);font-weight:600;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;border-radius:3px;padding:13px 26px;text-decoration:none;transition:all 0.22s;white-space:nowrap;border:2px solid transparent}
+.btn-primary{background:var(--blue-600);color:#fff;border-color:var(--blue-600)}
+.btn-primary:hover{background:var(--blue-700);border-color:var(--blue-700)}
+.btn-outline{background:transparent;color:var(--ink);border-color:rgba(14,24,35,0.25)}
+.btn-outline:hover{border-color:var(--blue-500);color:var(--blue-600)}
+.btn-white{background:#fff;color:var(--blue-700);border-color:#fff}
+.btn-white:hover{background:var(--blue-50)}
+.btn-outline-white{background:transparent;color:rgba(255,255,255,0.85);border-color:rgba(255,255,255,0.35)}
+.btn-outline-white:hover{border-color:rgba(255,255,255,0.75);color:#fff}
+
+/* ── Purpose band ── */
+.purpose-band{background:var(--blue-800);padding:56px 64px;display:flex;align-items:flex-start;gap:72px}
+.purpose-band blockquote{font-family:var(--font-display);font-size:clamp(24px,3vw,40px);line-height:1.05;color:#fff;flex:1.4;min-width:0}
+.purpose-band blockquote em{font-style:normal;color:var(--blue-300)}
+.purpose-div{width:1px;height:80px;background:rgba(107,163,220,0.25);flex-shrink:0;align-self:center}
+.purpose-right{flex:1;min-width:0}
+.purpose-right p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.62);line-height:1.85;margin-bottom:16px}
+.purpose-right p:last-child{margin-bottom:0}
+
+/* ── Section shared ── */
+.section{padding:84px 64px;max-width:1280px;margin:0 auto}
+.eyebrow{font-family:var(--font-condensed);font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--blue-500);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.eyebrow::before{content:'';width:24px;height:2px;background:var(--blue-500);flex-shrink:0}
+.heading{font-family:var(--font-display);font-size:clamp(32px,4vw,52px);line-height:1;letter-spacing:0.02em;color:var(--ink);margin-bottom:18px}
+.body-text{font-size:15px;font-weight:300;color:var(--ink2);line-height:1.82;max-width:620px}
+
+/* ── Service lines ── */
+.service-lines{display:flex;flex-direction:column;gap:2px;margin-top:48px}
+.svc-line{
+  background:var(--bg2);border:1px solid var(--border);
+  display:grid;grid-template-columns:52px 1fr 1fr;
+  position:relative;overflow:hidden;transition:border-color 0.3s;
+}
+.svc-line:hover{border-color:rgba(34,96,168,0.4)}
+.svc-line::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--blue-600),var(--blue-400));transform:scaleY(0);transform-origin:top;transition:transform 0.35s}
+.svc-line:hover::before{transform:scaleY(1)}
+.sl-letter{font-family:var(--font-display);font-size:60px;color:rgba(34,96,168,0.07);padding:28px 0 28px 16px;line-height:1;align-self:start;transition:color 0.3s;flex-shrink:0}
+.svc-line:hover .sl-letter{color:rgba(34,96,168,0.14)}
+.sl-main{padding:28px 28px;border-right:1px solid var(--border)}
+.sl-main h3{font-family:var(--font-condensed);font-size:18px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink);margin-bottom:10px}
+.sl-main p{font-size:13px;font-weight:300;color:var(--ink2);line-height:1.78}
+.sl-sub{padding:28px 28px}
+.sl-sub h4{font-family:var(--font-condensed);font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--blue-500);margin-bottom:12px}
+.sl-tags{display:flex;flex-wrap:wrap;gap:6px}
+.sl-tag{font-family:var(--font-condensed);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--mist);border:1px solid rgba(94,110,130,0.22);border-radius:2px;padding:4px 9px;transition:all 0.2s}
+.svc-line:hover .sl-tag{border-color:rgba(34,96,168,0.22);color:var(--ink2)}
+
+/* ── Gallery ── */
+.gallery-wrap{background:var(--bg3);padding:72px 64px}
+.gallery-inner{max-width:1280px;margin:0 auto}
+/* Hero row */
+.gallery-main{display:grid;grid-template-columns:1.55fr 1fr 1fr;grid-template-rows:310px 200px;gap:5px;margin-top:44px}
+.gc{overflow:hidden;border-radius:3px;background:var(--bg4);position:relative;cursor:pointer}
+.gc.tall{grid-row:1/3}
+.gc img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease,opacity 0.3s;opacity:0.85}
+.gc:hover img{transform:scale(1.05);opacity:1}
+.gc-cap{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(11,28,53,0.75));padding:18px 12px 9px;font-family:var(--font-condensed);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.88)}
+/* Row 2 */
+.gallery-row{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:5px}
+.gallery-row .gc{height:170px}
+.gallery-row2{grid-template-columns:1fr 1fr 1.3fr 1fr}
+.gallery-row .gc{height:185px}
+
+/* ── Yard band ── */
+.yard-band{background:var(--blue-900);padding:80px 64px}
+.yard-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.yard-text .eyebrow{color:var(--blue-300)}
+.yard-text .eyebrow::before{background:var(--blue-300)}
+.yard-text .heading{color:#fff}
+.yard-text p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.62);line-height:1.88;margin-bottom:14px}
+.yard-specs{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:32px}
+.yard-spec{background:rgba(255,255,255,0.04);border:1px solid rgba(107,163,220,0.12);padding:24px 20px;text-align:center;transition:border-color 0.3s}
+.yard-spec:hover{border-color:rgba(107,163,220,0.35)}
+.yard-spec-num{font-family:var(--font-display);font-size:38px;color:var(--blue-300);line-height:1}
+.yard-spec-unit{font-family:var(--font-condensed);font-size:11px;letter-spacing:0.1em;color:rgba(255,255,255,0.4)}
+.yard-spec-lbl{font-family:var(--font-condensed);font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.38);margin-top:5px}
+.yard-photos{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:4px;height:340px}
+.yp{overflow:hidden;border-radius:3px}
+.yp img{width:100%;height:100%;object-fit:cover;opacity:0.8;transition:opacity 0.3s}
+.yp:hover img{opacity:1}
+
+/* ── Capabilities ── */
+.cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:48px}
+.cap-card{background:var(--bg2);border:1px solid var(--border);padding:32px 26px;position:relative;overflow:hidden;transition:all 0.3s}
+.cap-card:hover{border-color:rgba(34,96,168,0.35);transform:translateY(-2px);box-shadow:0 8px 28px rgba(22,54,96,0.1)}
+.cap-card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--blue-600),var(--blue-400));transform:scaleX(0);transform-origin:left;transition:transform 0.35s}
+.cap-card:hover::after{transform:scaleX(1)}
+.cap-num{font-family:var(--font-display);font-size:48px;color:rgba(34,96,168,0.08);line-height:1;margin-bottom:10px}
+.cap-card h3{font-family:var(--font-condensed);font-size:14px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink);margin-bottom:9px}
+.cap-card p{font-size:12.5px;font-weight:300;color:var(--mist);line-height:1.75}
+
+/* ── Projects ── */
+.projects-wrap{background:var(--bg3);padding:84px 64px}
+.projects-inner{max-width:1280px;margin:0 auto}
+.proj-cards{display:flex;flex-direction:column;gap:2px;margin-top:44px}
+.proj-card{background:var(--bg2);border:1px solid var(--border);display:grid;grid-template-columns:200px 1fr 220px;gap:0;transition:border-color 0.3s;position:relative}
+.proj-card:hover{border-color:rgba(34,96,168,0.35)}
+.proj-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--blue-600),var(--blue-400));opacity:0;transition:opacity 0.35s}
+.proj-card:hover::before{opacity:1}
+.proj-photo{overflow:hidden;position:relative}
+.proj-photo img{width:100%;height:100%;object-fit:cover;opacity:0.85;transition:transform 0.5s,opacity 0.3s}
+.proj-card:hover .proj-photo img{transform:scale(1.04);opacity:1}
+.proj-body{padding:28px 32px;border-right:1px solid var(--border)}
+.proj-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.ptag{font-family:var(--font-condensed);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--blue-600);background:var(--blue-100);border:1px solid rgba(34,96,168,0.2);border-radius:2px;padding:3px 8px}
+.proj-body h3{font-family:var(--font-condensed);font-size:15px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink);margin-bottom:9px;line-height:1.3}
+.proj-body p{font-size:13px;font-weight:300;color:var(--ink2);line-height:1.75}
+.proj-meta{background:var(--bg3);padding:28px 22px;display:flex;flex-direction:column;gap:13px}
+.proj-meta dl dt{font-family:var(--font-condensed);font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--blue-500);margin-bottom:3px}
+.proj-meta dl dd{font-size:12.5px;font-weight:400;color:var(--ink2)}
+
+/* ── HSE ── */
+.hse-band{background:var(--blue-900);padding:76px 64px}
+.hse-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:80px;align-items:center}
+.hse-text .eyebrow{color:var(--blue-300)}
+.hse-text .eyebrow::before{background:var(--blue-300)}
+.hse-text .heading{color:#fff}
+.hse-text p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.62);line-height:1.88;margin-bottom:13px}
+.hse-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.hse-stat{background:rgba(255,255,255,0.04);border:1px solid rgba(107,163,220,0.18);padding:24px 16px;text-align:center;border-radius:3px;transition:border-color 0.3s}
+.hse-stat:hover{border-color:rgba(107,163,220,0.4)}
+.hse-stat-num{font-family:var(--font-display);font-size:52px;color:var(--blue-300);line-height:1}
+.hse-stat-lbl{font-family:var(--font-condensed);font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:6px;line-height:1.4}
+
+/* ── Clients ── */
+.clients-wrap{padding:72px 64px;background:var(--bg2)}
+.clients-inner{max-width:1280px;margin:0 auto}
+.clients-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px;margin-top:36px}
+@media(max-width:600px){.clients-grid{grid-template-columns:repeat(2,1fr);gap:12px}}
+.client-logo-card{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:#fff;border:1.5px solid var(--border);border-radius:6px;
+  padding:18px 12px 14px;min-height:90px;
+  transition:all 0.25s;cursor:default;
+  opacity:0;transform:translateY(12px);
+}
+.client-logo-card.visible{opacity:1;transform:translateY(0)}
+.client-logo-card:hover{border-color:var(--blue-400);box-shadow:0 4px 16px rgba(34,96,168,0.12);transform:translateY(-2px)}
+.client-logo-card img{max-width:120px;max-height:42px;width:auto;height:auto;object-fit:contain;display:block}
+.client-logo-card .cname{font-family:var(--font-condensed);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--mist);margin-top:8px;text-align:center;line-height:1.3}
+/* Colored brand logo badges for companies without fetchable logo images */
+.client-badge{
+  display:flex;align-items:center;justify-content:center;
+  width:110px;height:38px;border-radius:3px;
+  font-family:var(--font-condensed);font-weight:700;font-size:13px;
+  letter-spacing:0.08em;text-transform:uppercase;color:#fff;
+}
+.badge-shell{background:linear-gradient(135deg,#DD1D21 0%,#DD1D21 50%,#FFD100 50%,#FFD100 100%);color:#222}
+.badge-total{background:#E8002D;color:#fff}
+.badge-exxon{background:#003087;color:#fff}
+.badge-seplat{background:#006400;color:#fff}
+.badge-heirs{background:#1A1A2E;color:#e74c3c}
+.badge-generic{background:var(--blue-800);color:#fff}
+
+/* ── Credentials ── */
+.creds-wrap{background:var(--bg3);padding:72px 64px}
+.creds-inner{max-width:1280px;margin:0 auto}
+.creds-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:40px}
+.cred-card{background:var(--bg2);border:1px solid var(--border);padding:24px 20px;text-align:center;transition:border-color 0.3s}
+.cred-card:hover{border-color:rgba(34,96,168,0.35)}
+.cred-card h4{font-family:var(--font-condensed);font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue-600);margin-bottom:7px}
+.cred-card p{font-size:11.5px;font-weight:300;color:var(--mist);line-height:1.6}
+
+/* ── Group advantage ── */
+.group-band{background:var(--blue-800);padding:72px 64px}
+.group-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:72px;align-items:center}
+.group-text .eyebrow{color:var(--blue-300)}
+.group-text .eyebrow::before{background:var(--blue-300)}
+.group-text .heading{color:#fff}
+.group-text p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.62);line-height:1.88;margin-bottom:18px}
+.group-entities{display:flex;flex-direction:column;gap:10px}
+.group-entity{background:rgba(255,255,255,0.05);border:1px solid rgba(107,163,220,0.15);border-left:3px solid var(--blue-500);padding:18px 22px}
+.group-entity h4{font-family:var(--font-condensed);font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.88);margin-bottom:5px}
+.group-entity p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.5);line-height:1.6}
+.group-entity.combined{border-left-color:var(--blue-300);background:rgba(107,163,220,0.08)}
+.group-entity.combined h4{color:var(--blue-300)}
+
+/* ── CTA ── */
+.cta-band{background:var(--blue-700);padding:72px 64px;text-align:center}
+.cta-band h2{font-family:var(--font-display);font-size:clamp(38px,5vw,64px);color:#fff;margin-bottom:14px;line-height:1}
+.cta-band p{font-size:16px;font-weight:300;color:rgba(255,255,255,0.62);max-width:500px;margin:0 auto 32px;line-height:1.75}
+.cta-actions{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+
+/* ── Sister bar ── */
+.sister-bar{background:var(--bg3);border-top:1px solid var(--border);padding:20px 64px;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
+.sister-bar p{font-family:var(--font-condensed);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--mist)}
+.sister-bar a{font-family:var(--font-condensed);font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--blue-600);text-decoration:none;border:1.5px solid rgba(34,96,168,0.28);border-radius:3px;padding:7px 16px;transition:all 0.25s}
+.sister-bar a:hover{background:rgba(34,96,168,0.08);border-color:var(--blue-500)}
+
+/* ── Footer ── */
+footer{background:var(--blue-900);padding:52px 64px 36px}
+.footer-grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:48px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,0.07)}
+.footer-brand-name{font-family:var(--font-display);font-size:22px;letter-spacing:0.04em;color:#fff;line-height:1}
+.footer-brand-sub{font-family:var(--font-condensed);font-size:10px;letter-spacing:0.35em;color:var(--blue-400);text-transform:uppercase;margin-top:3px;display:block;margin-bottom:12px}
+.footer-brand p{font-size:13px;font-weight:300;color:rgba(255,255,255,0.48);line-height:1.78;max-width:260px}
+.footer-col h5{font-family:var(--font-condensed);font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--blue-400);margin-bottom:14px}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:9px}
+.footer-col a{font-size:13px;font-weight:300;color:rgba(255,255,255,0.48);text-decoration:none;transition:color 0.2s}
+.footer-col a:hover{color:rgba(255,255,255,0.9)}
+.footer-bottom{max-width:1280px;margin:26px auto 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-family:var(--font-condensed);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.28)}
+.footer-bottom a{color:var(--blue-400);text-decoration:none}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1100px){
+  .top-bar,nav,.purpose-band,.gallery-wrap,.yard-band,.hse-band,
+  .clients-wrap,.creds-wrap,.group-band,.cta-band,.sister-bar,footer{padding-left:40px;padding-right:40px}
+  .section{padding:72px 40px}
+  .projects-wrap{padding:72px 40px}
+  .cap-grid{grid-template-columns:repeat(2,1fr)}
+  .creds-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:36px}
+}
+@media(max-width:900px){
+  .svc-line{grid-template-columns:1fr}
+  .sl-letter{display:none}
+  .sl-main{border-right:none;border-bottom:1px solid var(--border)}
+  .yard-inner{grid-template-columns:1fr;gap:40px}
+  .yard-photos{height:220px}
+  .hse-inner{grid-template-columns:1fr;gap:40px}
+  .group-inner{grid-template-columns:1fr;gap:40px}
+  .proj-card{grid-template-columns:1fr}
+  .proj-photo{height:200px}
+  .proj-body{border-right:none;border-bottom:1px solid var(--border)}
+}
+@media(max-width:768px){
+  .top-bar{padding:8px 20px;font-size:10px;flex-direction:column;gap:5px;align-items:flex-start}
+  nav{padding:0 20px;height:60px}
+  .nav-links{display:none}
+  .nav-toggle{display:flex}
+  .hero{min-height:82vh;padding:0 20px 56px}
+  .hero-title{font-size:clamp(40px,10vw,64px)}
+  .hero-body{font-size:15px}
+  .hero-stats{gap:0;row-gap:16px}
+  .h-stat{padding:0 20px 0 12px}
+  .purpose-band{flex-direction:column;gap:28px;padding:48px 20px}
+  .purpose-div{display:none}
+  .section{padding:60px 20px}
+  .gallery-wrap{padding:60px 20px}
+  .gallery-main{grid-template-columns:1fr 1fr;grid-template-rows:200px 150px}
+  .gc.tall{grid-row:auto;grid-column:1/-1}
+  .gallery-row{grid-template-columns:1fr 1fr}
+  .gallery-row .gc{height:140px}
+  .yard-band,.hse-band,.group-band,.cta-band{padding:56px 20px}
+  .clients-wrap,.creds-wrap{padding:60px 20px}
+  .projects-wrap{padding:60px 20px}
+  .sister-bar{padding:16px 20px}
+  footer{padding:44px 20px 28px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:28px}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .hse-stats{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:480px){
+  .hero-title{font-size:clamp(36px,11vw,52px)}
+  .hero-stats{flex-direction:column;gap:12px}
+  .h-stat{border-left:none;padding-left:0;border-top:1px solid rgba(34,96,168,0.15);padding-top:12px}
+  .h-stat:first-child{border-top:none;padding-top:0}
+  .hero-actions{flex-direction:column;align-items:flex-start}
+  .gallery-main{grid-template-columns:1fr;grid-template-rows:auto}
+  .gallery-main .gc{height:200px}
+  .gallery-main .gc.tall{height:250px}
+  .gallery-row{grid-template-columns:1fr 1fr}
+  .cap-grid{grid-template-columns:1fr}
+  .creds-grid{grid-template-columns:1fr 1fr}
+  .yard-specs{grid-template-columns:1fr 1fr}
+  .hse-stats{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .cta-actions{flex-direction:column;align-items:center}
+}
+
+/* ===== REVIEW PATCH: dark theme + red accent + ISO + bold ===== */
+:root{
+  --red:#C0392B;--red-light:#E74C3C;--red-dark:#96281B;
+}
+body{background:#0B1C35 !important;color:#E8EEF5 !important}
+
+/* Dark nav/header overrides */
+nav, .site-nav, .nav-bar, header.site-header, .top-bar{
+  background:#070F1C !important;
+  border-bottom-color:rgba(58,123,200,0.2) !important;
+}
+/* Bolder body text */
+p, li, td, .desc, .service-desc, .section-body, .content-body{
+  font-weight:500 !important;
+}
+/* Justified text on descriptions */
+.service-desc, .card-desc, .section-desc, .intro-text, .page-intro,
+.service-body p, .content p, .hero-sub, .about-text{
+  text-align:justify !important;
+}
+/* Red accent on CTA buttons */
+.btn-primary, .cta-btn, .nav-cta, a.btn{
+  background:var(--red) !important;
+  border-color:var(--red-dark) !important;
+}
+.btn-primary:hover, .cta-btn:hover{
+  background:var(--red-dark) !important;
+}
+/* Red top-accent on cards */
+.service-card::before, .project-card::before, .capability-card::before{
+  background:linear-gradient(90deg,var(--red),var(--blue-400)) !important;
+}
+/* ISO strip — injected on every page */
+.iso-global-strip{
+  background:#070F1C;
+  border-top:3px solid var(--red);
+  border-bottom:1px solid rgba(58,123,200,0.15);
+  padding:18px 48px;
+  text-align:center;
+}
+.iso-global-inner{
+  max-width:1200px;margin:0 auto;
+  display:flex;align-items:center;justify-content:center;
+  flex-wrap:wrap;gap:0;
+}
+.iso-global-label{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:9px;letter-spacing:0.3em;text-transform:uppercase;
+  color:var(--red-light);margin-right:24px;white-space:nowrap;
+}
+.iso-global-cert{
+  display:flex;flex-direction:column;align-items:center;
+  padding:0 20px;
+}
+.iso-global-num{
+  font-family:'Bebas Neue',sans-serif;font-size:17px;
+  color:#fff;letter-spacing:0.05em;line-height:1;
+}
+.iso-global-desc{
+  font-family:'Barlow Condensed',sans-serif;font-size:8px;
+  letter-spacing:0.14em;text-transform:uppercase;color:#5E8AAD;
+  margin-top:2px;
+}
+.iso-global-sep{width:1px;height:30px;background:rgba(58,123,200,0.2)}
+@media(max-width:640px){
+  .iso-global-strip{padding:14px 12px}
+  .iso-global-cert{padding:0 10px}
+  .iso-global-num{font-size:14px}
+  .iso-global-label{margin-right:10px;font-size:8px}
+}
+/* ===== END REVIEW PATCH ===== */
+
+</style>
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="top-bar" style="background:var(--blue-900);padding:8px 64px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+  <span style="font-family:var(--font-condensed);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.45)">Kohasa Group of Companies · Est. 2003 · Port Harcourt, Nigeria</span>
+  <div style="display:flex;align-items:center;gap:14px">
+    <!-- Engineering logo → links to Engineering site (PDF requirement: both logos on all sites) -->
+    <a href="/kohasaeng-homepage" title="Kohasa Engineering" style="display:inline-flex;align-items:center;opacity:0.85;transition:opacity 0.2s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.85">
+      <img src="https://drive.google.com/thumbnail?id=1r__-mLttRfHxNnIBa6eSXWG81jdgNF5y&sz=w400" alt="Kohasa Engineering" style="height:26px;width:auto;object-fit:contain;opacity:0.85" loading="lazy">
+    </a>
+    <span style="color:rgba(107,163,220,0.25);font-size:10px">·</span>
+    <a href="/" style="font-family:var(--font-condensed);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(107,163,220,0.7);text-decoration:none" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(107,163,220,0.7)'">Group</a>
+  </div>
+</div>
+
+<!-- Nav -->
+<nav>
+  <a href="/kohasaconstruction-homepage" class="nav-logo" aria-label="Kohasa Construction — Home">
+    <img src="https://drive.google.com/thumbnail?id=149LEx84gGeRgpYw9gJ3u1e4w8W-I6AcC&sz=w400" alt="Kohasa Construction" class="nav-const-logo" loading="eager"
+         onerror="this.style.opacity='0.4'">
+  </a>
+  <ul class="nav-links">
+    <li class="nav-item">
+      <a href="#services">Services ▾</a>
+      <div class="nav-dropdown">
+        <a href="/construction-fabrication">Construction & Fabrication</a>
+        <a href="/industrial-maintenance">Industrial Maintenance</a>
+        <a href="/marine-offshore">Marine & Offshore</a>
+        <a href="/civil-structural">Civil & Structural Engineering</a>
+      </div>
+    </li>
+    <li><a href="/projects-overview">Projects</a></li>
+    <li><a href="/capabilities">Capabilities</a></li>
+    <li><a href="/qhse">HSE / QHSE</a></li>
+    <li><a href="#clients">Clients</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="navClose">✕</button>
+  <a href="#services" onclick="closeMobileNav()">Services</a>
+  <a href="/construction-fabrication" onclick="closeMobileNav()" style="font-size:22px;color:rgba(255,255,255,0.55)">↳ Construction & Fabrication</a>
+  <a href="/industrial-maintenance" onclick="closeMobileNav()" style="font-size:22px;color:rgba(255,255,255,0.55)">↳ Industrial Maintenance</a>
+  <a href="/marine-offshore" onclick="closeMobileNav()" style="font-size:22px;color:rgba(255,255,255,0.55)">↳ Marine & Offshore</a>
+  <a href="/projects-overview" onclick="closeMobileNav()">Projects</a>
+  <a href="/capabilities" onclick="closeMobileNav()">Capabilities</a>
+  <a href="/qhse" onclick="closeMobileNav()">QHSE</a>
+  <a href="#clients" onclick="closeMobileNav()">Clients</a>
+  <a href="/contact" onclick="closeMobileNav()">Contact</a>
+  <a href="/kohasaeng-homepage" class="eng">← Kohasa Engineering</a>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="https://drive.google.com/thumbnail?id=1wEz-3DIBvgYXHEJ60qTgBXK2Gw0diD4O&sz=w1400" alt="Awoba Manifold Injection Production Platform — Kohasa Construction field operations">
+  </div>
+  <div class="hero-accent"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Kohasa Construction Company Limited · Est. 2003</p>
+    <h1 class="hero-title">Construction.<br>Fabrication.<br><em>Zero Incidents.</em></h1>
+    <p class="hero-body">A specialist onshore and offshore construction, fabrication, installation, and industrial maintenance contractor — operating from a purpose-built 14,092 m² fabrication yard in Port Harcourt with a five-year Lost Time Incident-free record.</p>
+    <div class="hero-stats">
+      <div class="h-stat"><div class="h-stat-num">20+</div><div class="h-stat-lbl">Years Field Experience</div></div>
+      <div class="h-stat"><div class="h-stat-num">14,092</div><div class="h-stat-lbl">m² Fabrication Yard</div></div>
+      <div class="h-stat"><div class="h-stat-num">0</div><div class="h-stat-lbl">LTI — 5-Year Record</div></div>
+      <div class="h-stat"><div class="h-stat-num">NGN5B+</div><div class="h-stat-lbl">Active Contract Value</div></div>
+    </div>
+    <div class="hero-actions">
+      <a href="#services" class="btn btn-primary">Our Services</a>
+      <a href="#contact" class="btn btn-outline">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- Purpose -->
+<div class="purpose-band">
+  <blockquote>We build and maintain the infrastructure that powers <em>Africa's energy industry</em> — safely, on time, and to the highest technical standard.</blockquote>
+  <div class="purpose-div"></div>
+  <div class="purpose-right">
+    <p>The combination of a fully equipped fabrication yard, an integrated engineering capability, an extensive field operations track record, and an uncompromising HSE culture makes Kohasa Construction the preferred contractor for complex, high-stakes projects.</p>
+    <p>As the sister company to Kohasa Engineering Company Limited, we offer clients the rare advantage of seamlessly integrated design-and-build capability under a single trusted group.</p>
+  </div>
+</div>
+
+<!-- Services -->
+<section class="section" id="services">
+  <p class="eyebrow">What We Deliver</p>
+  <h2 class="heading">Three Core Service Lines</h2>
+  <p class="body-text">Delivered through integrated teams combining engineering understanding with field execution expertise — onshore, swamp, and offshore.</p>
+  <div class="service-lines">
+    <div class="svc-line">
+      <div class="sl-letter">A</div>
+      <div class="sl-main">
+        <h3>Construction & Fabrication</h3>
+        <p>End-to-end construction and fabrication of oil and gas production facilities, pipelines, storage tanks, and marine/offshore structures. Shop fabrication at our purpose-built yard in Elelenwo, Port Harcourt, with load-out via our 1,500-tonne capacity jetty.</p>
+      </div>
+      <div class="sl-sub">
+        <h4>Scope includes</h4>
+        <div class="sl-tags">
+          <span class="sl-tag">Interconnecting Piping</span><span class="sl-tag">Wellhead Platforms & Jackets</span>
+          <span class="sl-tag">Storage Tank Construction</span><span class="sl-tag">Pipeline Construction</span>
+          <span class="sl-tag">Steel Structural Fabrication</span><span class="sl-tag">Civil Works & Foundations</span>
+          <span class="sl-tag">Pre-Commissioning</span><span class="sl-tag">LPG / CPF EPCI</span>
+        </div>
+      </div>
+    </div>
+    <div class="svc-line">
+      <div class="sl-letter">B</div>
+      <div class="sl-main">
+        <h3>Industrial Maintenance & Operations Support</h3>
+        <p>Sustained operational and maintenance support for producing facilities — planned and reactive maintenance, equipment modification and upgrade, pipeline maintenance, corrosion treatment, and tank rehabilitation. We embed seamlessly into client operations to maximise uptime and asset integrity.</p>
+      </div>
+      <div class="sl-sub">
+        <h4>Scope includes</h4>
+        <div class="sl-tags">
+          <span class="sl-tag">Mechanical Modification & Upgrade</span><span class="sl-tag">Tank Rehabilitation</span>
+          <span class="sl-tag">Pipeline Maintenance & Repair</span><span class="sl-tag">Corrosion Treatment</span>
+          <span class="sl-tag">O&M Contracts</span><span class="sl-tag">Crude Oil Terminal Operations</span>
+        </div>
+      </div>
+    </div>
+    <div class="svc-line">
+      <div class="sl-letter">C</div>
+      <div class="sl-main">
+        <h3>Specialist Field Services</h3>
+        <p>Specialist technical services underpinning safe construction and operational integrity — Non-Destructive Testing, hydrostatic pressure testing, instrumentation and metering systems installation, and marine structures maintenance.</p>
+      </div>
+      <div class="sl-sub">
+        <h4>Scope includes</h4>
+        <div class="sl-tags">
+          <span class="sl-tag">NDT (UT, RT, DPT, MPI)</span><span class="sl-tag">Hydrostatic Pressure Testing</span>
+          <span class="sl-tag">Metering Systems Installation</span><span class="sl-tag">Auto Sampler Installation</span>
+          <span class="sl-tag">Marine Structures</span><span class="sl-tag">Instrumentation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<div class="gallery-wrap" id="gallery">
+  <div class="gallery-inner">
+    <p class="eyebrow">Field Operations</p>
+    <h2 class="heading">On Site. In the Field.</h2>
+    <div class="gallery-main">
+      <div class="gc tall">
+        <img src="https://drive.google.com/thumbnail?id=1jbtdebP9A5QPjIzflFuwpxqpWYaamz_Z&sz=w1400" alt="Piling of the boat landing — offshore construction works">
+        <div class="gc-cap">Piling — Boat Landing · Offshore Works</div>
+      </div>
+      <div class="gc"><img src="https://drive.google.com/thumbnail?id=1RXxpl6DZwVCt-hwCzGEk2w9N9RkU0fab&sz=w800" alt="Structural fabrication Seplat Amukpe"><div class="gc-cap">Structural Fabrication · Amukpe/Seplat</div></div>
+      <div class="gc"><img src="https://drive.google.com/thumbnail?id=1NfkRrPQH7fZ3rILHXh-IK1fre9yYENGc&sz=w800" alt="Site erection Amukpe"><div class="gc-cap">Site Erection · Amukpe Facility</div></div>
+      <div class="gc"><img src="https://drive.google.com/thumbnail?id=1sgfGyEUr6SSX9gMcYDWxkVxm_1_jJ1B7&sz=w800" alt="Civil and structural works"><div class="gc-cap">Civil & Structural Engineering Works</div></div>
+      <div class="gc"><img src="https://drive.google.com/thumbnail?id=1Af0Walam-TQRZCqeRVuH_ucuH805FqIC&sz=w800" alt="Fabrication yard operations"><div class="gc-cap">Fabrication Yard Operations</div></div>
+    </div>
+    <div class="gallery-row">
+      <div class="gc"><img src="https://drive.google.com/thumbnail?id=11YNPMSEQj2qt_oV5n0nHMJPO1oaiz3B-&sz=w600" alt="Piping installation"><div class="gc-cap">Piping Installation</div></div>
+      <div class="gc"><img src="https://drive.google.com/thumbnail?id=1GClrO8g-k3lzgCyX95x9X4crWRS6QDpZ&sz=w600" alt="Structural steel works"><div class="gc-cap">Structural Steel Works</div></div>
+      <div class="gc"><img src="https://drive.google.com/thumbnail?id=1A9EMx8KmByzQiAR24mEavxahpI3trPqR&sz=w600" alt="Site construction"><div class="gc-cap">Site Construction</div></div>
+      <div class="gc"><img src="https://drive.google.com/thumbnail?id=1rziMbA0M4sCKtzcDezJph5mavJ85WGkO&sz=w600" alt="Field operations"><div class="gc-cap">Field Operations</div></div>
+    </div>
+    <div class="gallery-row gallery-row2">
+      <div class="gc"><img src="https://drive.google.com/thumbnail?id=1jUYRmP8xbKoyILXbnHBl3GRYQEQqSYvs&sz=w600" alt="Civil works Amukpe 2014"><div class="gc-cap">Civil Works · Amukpe 2014</div></div>
+      <div class="gc"><img src="https://drive.google.com/thumbnail?id=1JYO5tuByHwpwqFiHJuu4Y7Sxp2mXf3XR&sz=w600" alt="Structural installation"><div class="gc-cap">Structural Installation</div></div>
+      <div class="gc"><img src="https://drive.google.com/thumbnail?id=14Gh8WAYMNmptwZiuner3iKD9sL2zMZuI&sz=w600" alt="Site works Amukpe 2015"><div class="gc-cap">Site Works · Amukpe 2015</div></div>
+      <div class="gc"><img src="https://drive.google.com/thumbnail?id=12Dtcck32ykYdlQZq9yIb6csT9qrHEFCc&sz=w600" alt="2019 site operations"><div class="gc-cap">Site Operations · 2019</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Yard -->
+<div class="yard-band">
+  <div class="yard-inner">
+    <div class="yard-text">
+      <p class="eyebrow" style="color:var(--blue-300)"><span style="background:var(--blue-300);display:inline-block;width:24px;height:2px;margin-right:10px;vertical-align:middle"></span>Port Harcourt Fabrication Yard</p>
+      <h2 class="heading" style="color:#fff;margin-top:4px">A Genuine Competitive Advantage</h2>
+      <p>Our purpose-built fabrication yard at Rumuodrikrike, Elelenwo — complete with a load-out jetty and direct river access to the Udeni waterway — gives us a real edge in shop fabrication, quality control, and logistics management across the Niger Delta.</p>
+      <p>From wellhead platform fabrication to pipeline construction in swamp terrain, our teams execute safely and efficiently in the most demanding operating environments.</p>
+      <div class="yard-specs">
+        <div class="yard-spec"><div class="yard-spec-num">14,092</div><div class="yard-spec-unit">m²</div><div class="yard-spec-lbl">Total Yard Area</div></div>
+        <div class="yard-spec"><div class="yard-spec-num">1,500</div><div class="yard-spec-unit">tonnes</div><div class="yard-spec-lbl">Jetty Load-Out</div></div>
+        <div class="yard-spec"><div class="yard-spec-num">1,500</div><div class="yard-spec-unit">m²</div><div class="yard-spec-lbl">Workshop Area</div></div>
+        <div class="yard-spec"><div class="yard-spec-num">River</div><div class="yard-spec-unit">Access</div><div class="yard-spec-lbl">Udeni Waterway</div></div>
+      </div>
+    </div>
+    <div class="yard-photos">
+      <div class="yp"><img src="https://drive.google.com/thumbnail?id=1wrwNsiHFhvPl_nnwZWhBzqhg1UX_ivAx&sz=w700" alt="Fabrication yard"></div>
+      <div class="yp"><img src="https://drive.google.com/thumbnail?id=1VfGX9lLRy59gHHvlq0TonaelDLSQs2jV&sz=w700" alt="Yard operations"></div>
+      <div class="yp"><img src="https://drive.google.com/thumbnail?id=1_8YyYW6gtmtdMCrszZMY8iKmq5mweHxu&sz=w700" alt="Structural fabrication"></div>
+      <div class="yp"><img src="https://drive.google.com/thumbnail?id=1nG1aXxeqt9T7nZYYmvJetGgavHNW296A&sz=w700" alt="Site construction"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Capabilities -->
+<section class="section" id="capabilities">
+  <p class="eyebrow">Technical Capabilities</p>
+  <h2 class="heading">Construction Capability in Detail</h2>
+  <p class="body-text">Every scope executed to international codes and client specifications, with full documentation and as-built records. Materials: Carbon Steel · Stainless Steel · Duplex SS · CuNi · GRE/GRP. Welding: SMAW, GTAW, FCAW, SAW.</p>
+  <div class="cap-grid">
+    <div class="cap-card"><div class="cap-num">01</div><h3>Interconnecting Piping</h3><p>Shop and field fabrication in carbon steel, stainless steel, and duplex materials. Piece-mark system. Multiple welding processes. ASME-compliant.</p></div>
+    <div class="cap-card"><div class="cap-num">02</div><h3>Wellhead Platforms & Jackets</h3><p>Fabrication of wellhead platforms, jackets, dolphins, piles, and structural appurtenances for onshore and offshore. Manifold installation included.</p></div>
+    <div class="cap-card"><div class="cap-num">03</div><h3>Storage Tank Construction</h3><p>Above-ground storage tanks to API 650 and API 620. New construction and rehabilitation. Condensate, firewater, LPG, crude, and base oil tanks.</p></div>
+    <div class="cap-card"><div class="cap-num">04</div><h3>Pipeline Construction</h3><p>Full-cycle execution: survey, staking, clearing, stringing, bending, welding, coating, trenching, lowering-in, tie-ins, pressure testing — onshore, swamp, offshore.</p></div>
+    <div class="cap-card"><div class="cap-num">05</div><h3>NDT & Testing Services</h3><p>Hydrostatic and pneumatic pressure testing. UT, RT, Dye Penetrant (DPT), Magnetic Particle Inspection (MPI). ASNT Level 1 & 2 certified personnel.</p></div>
+    <div class="cap-card"><div class="cap-num">06</div><h3>LPG Plants & CPF</h3><p>EPCI capability for LPG extraction plants including interconnecting piping, firefighting systems (firewater tanks, foam systems), and complete CPF installations.</p></div>
+    <div class="cap-card"><div class="cap-num">07</div><h3>Steel Structural Fabrication</h3><p>Pipe racks, tank farms, access platforms, deck extensions, pig launchers and receivers. Pre-fabrication at yard followed by site installation.</p></div>
+    <div class="cap-card"><div class="cap-num">08</div><h3>Metering & Instrumentation</h3><p>Procurement, fabrication, and installation of orifice assemblies, auto samplers, custody transfer meters, transmitters, and associated tubing systems.</p></div>
+    <div class="cap-card"><div class="cap-num">09</div><h3>Civil Works & Foundations</h3><p>Equipment foundations, pipe rack supports, access roads, covered warehouses, generator sheds, security towers, and reinforced concrete culverts.</p></div>
+  </div>
+</section>
+
+<!-- Projects -->
+<div class="projects-wrap">
+  <div class="projects-inner">
+    <p class="eyebrow">Project References</p>
+    <h2 class="heading">Delivered. Documented. Proven.</h2>
+    <p class="body-text">A representative selection from our portfolio spanning major IOCs, NOCs, and independent operators across Nigeria.</p>
+    <div class="proj-cards">
+
+      <div class="proj-card">
+        <div class="proj-photo"><img src="https://drive.google.com/thumbnail?id=1ppYRJSDBWhT9p15tIJjEDnFZeIpUuMS3&sz=w600" alt="Escravos Crude Oil Terminal"></div>
+        <div class="proj-body">
+          <div class="proj-tags"><span class="ptag">Tank Rehabilitation</span><span class="ptag">O&M</span><span class="ptag">Ongoing</span></div>
+          <h3>NPSC Escravos Crude Oil Terminal — Tank 102 & 106 Rehabilitation, Operation & Maintenance</h3>
+          <p>Comprehensive rehabilitation, operation, and maintenance of two crude oil storage tanks at the Escravos terminal. A flagship engagement demonstrating capacity to deliver complex, sustained O&M contracts for critical infrastructure.</p>
+        </div>
+        <div class="proj-meta">
+          <dl><dt>Client</dt><dd>WAGL Energy Limited</dd></dl>
+          <dl><dt>Contract Value</dt><dd>NGN 5.15 Billion</dd></dl>
+          <dl><dt>Duration</dt><dd>36 Months</dd></dl>
+          <dl><dt>Status</dt><dd>Ongoing</dd></dl>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-photo"><img src="https://drive.google.com/thumbnail?id=1nUF5EQW87gL4ASLwyZOFLr1nh8nKN-2R&sz=w600" alt="Shell SNEPCO Civil Framework"></div>
+        <div class="proj-body">
+          <div class="proj-tags"><span class="ptag">Framework Contract</span><span class="ptag">HCD</span><span class="ptag">Shell SNEPCO</span></div>
+          <h3>Human Capital Development — SNEPCO Civil Call-Off Framework 2025–2028</h3>
+          <p>A 3-year USD 20 million call-off framework with Shell Nigeria Exploration and Production Company Limited for the provision of Human Capital Development services in civil engineering disciplines.</p>
+        </div>
+        <div class="proj-meta">
+          <dl><dt>Client</dt><dd>Shell SNEPCO</dd></dl>
+          <dl><dt>Contract Value</dt><dd>USD 20,000,000</dd></dl>
+          <dl><dt>Duration</dt><dd>3 Years</dd></dl>
+          <dl><dt>Completion</dt><dd>June 2028</dd></dl>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-photo"><img src="https://drive.google.com/thumbnail?id=1CbCIdZPRFPwvG7iAJqXm_My1gzmFbzZT&sz=w600" alt="LPG Extraction Plant Otakikpo"></div>
+        <div class="proj-body">
+          <div class="proj-tags"><span class="ptag">EPCI</span><span class="ptag">LPG Plant</span><span class="ptag">Firewater Systems</span></div>
+          <h3>12MMSCFD LPG Extraction Plant — Interconnecting Piping & CPF Firefighting, Otakikpo OML 11</h3>
+          <p>Design, procurement, fabrication, and installation of the complete interconnecting piping system and CPF firefighting infrastructure for a 12 MMSCFD LPG extraction plant.</p>
+        </div>
+        <div class="proj-meta">
+          <dl><dt>Client</dt><dd>Lambda Gas / Green Energy Int'l</dd></dl>
+          <dl><dt>Combined Value</dt><dd>NGN 839M+</dd></dl>
+          <dl><dt>Duration</dt><dd>6 Months</dd></dl>
+          <dl><dt>Completion</dt><dd>May 2022</dd></dl>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-photo"><img src="https://drive.google.com/thumbnail?id=1wEz-3DIBvgYXHEJ60qTgBXK2Gw0diD4O&sz=w600" alt="Awoba Manifold Injection Platform"></div>
+        <div class="proj-body">
+          <div class="proj-tags"><span class="ptag">EPC</span><span class="ptag">Offshore Platform</span><span class="ptag">Custody Transfer</span></div>
+          <h3>LACT Unit — Awoba Manifold Injection Production Platform, Rivers State</h3>
+          <p>Full EPC of a Lease Automatic Custody Transfer unit for an offshore production platform — piling, deck extension, platform installation, mechanical piping hook-up, and pre-commissioning.</p>
+        </div>
+        <div class="proj-meta">
+          <dl><dt>Client</dt><dd>Field Offshore Design Eng.</dd></dl>
+          <dl><dt>Facility Owner</dt><dd>Newcross E&P</dd></dl>
+          <dl><dt>Contract Value</dt><dd>NGN 482,112,151</dd></dl>
+          <dl><dt>Completion</dt><dd>Aug 2018</dd></dl>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-photo"><img src="https://drive.google.com/thumbnail?id=1v6Ki6Wx75i94kkH_RCLLJk33kkAXP9rK&sz=w600" alt="Heirs Energies Mechanical Maintenance"></div>
+        <div class="proj-body">
+          <div class="proj-tags"><span class="ptag">Industrial Maintenance</span><span class="ptag">Piping Modification</span><span class="ptag">Multi-Facility</span></div>
+          <h3>Mechanical Modification & Upgrade Programme — Heirs Energies</h3>
+          <p>Twelve-month mechanical modification and upgrade framework covering multiple facilities — EP8 process piping, OBIGBO FS production routing modifications, and pump discharge header replacements.</p>
+        </div>
+        <div class="proj-meta">
+          <dl><dt>Client</dt><dd>Heirs Energies Limited</dd></dl>
+          <dl><dt>Contract Value</dt><dd>Undisclosed</dd></dl>
+          <dl><dt>Duration</dt><dd>12 Months</dd></dl>
+          <dl><dt>Completion</dt><dd>December 2025</dd></dl>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-photo"><img src="https://drive.google.com/thumbnail?id=1KZYYRgGuwn8Gwi4J8lTNAlKG9HNV6QdD&sz=w600" alt="Sea Eagle and Bonga FPSO works"></div>
+        <div class="proj-body">
+          <div class="proj-tags"><span class="ptag">FPSO</span><span class="ptag">Marine Fabrication</span><span class="ptag">Shell / SNEPCO</span></div>
+          <h3>Sea Eagle FPSO & Bonga FPSO — Laydown Area Dunnage Wood Replacement</h3>
+          <p>Engineering, procurement, pre-fabrication, and installation of laydown area dunnage wood systems aboard two major FPSOs — demonstrating marine fabrication capability on live production vessels.</p>
+        </div>
+        <div class="proj-meta">
+          <dl><dt>Facility Owners</dt><dd>Renaissance Africa / Shell SNEPCO</dd></dl>
+          <dl><dt>Clients</dt><dd>Baywood Continental / Dormanlong</dd></dl>
+          <dl><dt>Duration</dt><dd>8–11 Months each</dd></dl>
+          <dl><dt>Completion</dt><dd>August 2018</dd></dl>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- HSE -->
+<div class="hse-band" id="hse">
+  <div class="hse-inner">
+    <div class="hse-text">
+      <p class="eyebrow"><span style="background:var(--blue-300);display:inline-block;width:24px;height:2px;margin-right:10px;vertical-align:middle"></span>Health, Safety & Environment</p>
+      <h2 class="heading" style="color:#fff;margin-top:4px">Safety is Non-Negotiable</h2>
+      <p>At Kohasa Construction, HSE is not a compliance requirement — it is a core value embedded in every decision, every work pack, and every personnel interaction. Our HSE management system is certified to ISO 45001:2018.</p>
+      <p>Five consecutive years without a single Lost Time Incident, Fatality, or Environmental Case. Our HSE culture is built on personal accountability, systemic improvement, and the conviction that every incident is preventable.</p>
+      <p>156 hazard reports recorded in 2025. 9 emergency response drills conducted. Site-specific HSE Operating System deployed at every project location.</p>
+    </div>
+    <div class="hse-stats">
+      <div class="hse-stat"><div class="hse-stat-num">0</div><div class="hse-stat-lbl">Lost Time Incidents 2021–2025</div></div>
+      <div class="hse-stat"><div class="hse-stat-num">0</div><div class="hse-stat-lbl">Fatalities 2021–2025</div></div>
+      <div class="hse-stat"><div class="hse-stat-num">0</div><div class="hse-stat-lbl">Environmental Incidents 2021–2025</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Clients -->
+<div class="clients-wrap" id="clients">
+  <div class="clients-inner">
+    <p class="eyebrow">Client Portfolio</p>
+    <h2 class="heading">Trusted by Nigeria's Leading Energy Operators</h2>
+    <p class="body-text">Our client portfolio encompasses international oil companies, national oil companies, independents, and specialist service companies operating across the Niger Delta and beyond.</p>
+    <div class="clients-grid" id="clientsGrid">
+      <!-- Shell -->
+      <div class="client-logo-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Shell_logo.svg/240px-Shell_logo.svg.png"
+             alt="Shell" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="client-badge badge-shell" style="display:none">SHELL</div>
+        <span class="cname">Shell / SPDC / SNEPCO</span>
+      </div>
+      <!-- TotalEnergies -->
+      <div class="client-logo-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/TotalEnergies_logo.svg/240px-TotalEnergies_logo.svg.png"
+             alt="TotalEnergies" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="client-badge badge-total" style="display:none">TOTAL</div>
+        <span class="cname">TotalEnergies Nigeria</span>
+      </div>
+      <!-- ExxonMobil -->
+      <div class="client-logo-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/ExxonMobil_Logo.svg/240px-ExxonMobil_Logo.svg.png"
+             alt="ExxonMobil" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="client-badge badge-exxon" style="display:none">EXXON</div>
+        <span class="cname">ExxonMobil Producing Nigeria</span>
+      </div>
+      <!-- Seplat -->
+      <div class="client-logo-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Seplat_Energy.svg/240px-Seplat_Energy.svg.png"
+             alt="Seplat Energy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="client-badge badge-seplat" style="display:none">SEPLAT</div>
+        <span class="cname">Seplat Energy</span>
+      </div>
+      <!-- Heirs Energies -->
+      <div class="client-logo-card">
+        <div class="client-badge badge-heirs">HEIRS</div>
+        <span class="cname">Heirs Energies</span>
+      </div>
+      <!-- WAGL Energy -->
+      <div class="client-logo-card">
+        <div class="client-badge badge-generic">WAGL</div>
+        <span class="cname">WAGL Energy / NEPL</span>
+      </div>
+      <!-- Green Energy -->
+      <div class="client-logo-card">
+        <div class="client-badge" style="background:#2E8B57">GEI</div>
+        <span class="cname">Green Energy International</span>
+      </div>
+      <!-- First E&P -->
+      <div class="client-logo-card">
+        <div class="client-badge" style="background:#0D3B6E">FIRST E&P</div>
+        <span class="cname">First E&amp;P Development</span>
+      </div>
+      <!-- Newcross -->
+      <div class="client-logo-card">
+        <div class="client-badge" style="background:#7B1C1C">NEWCROSS</div>
+        <span class="cname">Newcross Exploration</span>
+      </div>
+      <!-- Renaissance -->
+      <div class="client-logo-card">
+        <div class="client-badge" style="background:#1C3A5E">RAE</div>
+        <span class="cname">Renaissance Africa Energy</span>
+      </div>
+      <!-- Lambda -->
+      <div class="client-logo-card">
+        <div class="client-badge" style="background:#1A1A40">LAMBDA</div>
+        <span class="cname">Lambda Gas Dynamics</span>
+      </div>
+      <!-- Ponticelli -->
+      <div class="client-logo-card">
+        <div class="client-badge" style="background:#CC3300">PONT.</div>
+        <span class="cname">Ponticelli Nigeria</span>
+      </div>
+    </div>
+    <script>
+    (function(){
+      var cards=document.querySelectorAll('#clientsGrid .client-logo-card');
+      if('IntersectionObserver' in window){
+        var io=new IntersectionObserver(function(entries){
+          entries.forEach(function(e,i){
+            if(e.isIntersecting){
+              setTimeout(function(){e.target.classList.add('visible')},i*60);
+              io.unobserve(e.target);
+            }
+          });
+        },{threshold:0.1});
+        cards.forEach(function(c){io.observe(c)});
+      } else {
+        cards.forEach(function(c){c.classList.add('visible')});
+      }
+    })();
+    </script>
+  </div>
+</div>
+
+<!-- Credentials -->
+<div class="creds-wrap">
+  <div class="creds-inner">
+    <p class="eyebrow">Credentials & Certifications</p>
+    <h2 class="heading">Quality, Safety & Regulatory Standing</h2>
+    <div class="creds-grid">
+      <div class="cred-card"><h4>ISO 9001:2015</h4><p>Quality Management System — Bureau Veritas (UKAS-accredited)</p></div>
+      <div class="cred-card"><h4>ISO 14001:2015</h4><p>Environmental Management System — Bureau Veritas</p></div>
+      <div class="cred-card"><h4>ISO 45001:2018</h4><p>Occupational Health & Safety Management — Bureau Veritas</p></div>
+      <div class="cred-card"><h4>IMS</h4><p>Integrated Management System — operational since March 2023</p></div>
+      <div class="cred-card"><h4>COREN EF. 1430</h4><p>Council for the Regulation of Engineering in Nigeria — Mechanical & Marine</p></div>
+      <div class="cred-card"><h4>ACEN F329</h4><p>Association for Consulting Engineering in Nigeria — Firm Membership</p></div>
+      <div class="cred-card"><h4>NIPEX JQS</h4><p>Pre-qualified since March 2010</p></div>
+      <div class="cred-card"><h4>ASNT NDT</h4><p>Non-Destructive Testing personnel — ASNT Level 1 & 2 certified</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- Group advantage -->
+<div class="group-band">
+  <div class="group-inner">
+    <div class="group-text">
+      <p class="eyebrow"><span style="background:var(--blue-300);display:inline-block;width:24px;height:2px;margin-right:10px;vertical-align:middle"></span>The Group Advantage</p>
+      <h2 class="heading" style="color:#fff;margin-top:4px">One Group. Full Project Lifecycle.</h2>
+      <p>As the sister company to Kohasa Engineering Company Limited, clients engaging Kohasa Construction have access to an integrated group capability spanning engineering design, project management, and construction delivery.</p>
+      <p>This eliminates interface risk, reduces mobilisation time, and ensures technical continuity from FEED through to mechanical completion — a rare advantage in Nigeria's oil and gas landscape.</p>
+      <a href="/kohasaeng-homepage" class="btn btn-outline-white">Visit Kohasa Engineering →</a>
+    </div>
+    <div class="group-entities">
+      <div class="group-entity">
+        <h4>Kohasa Engineering Company Limited</h4>
+        <p>Engineering Design · PMC · Human Capacity Development · Personnel Supply</p>
+      </div>
+      <div class="group-entity">
+        <h4>Kohasa Construction Company Limited</h4>
+        <p>Construction · Fabrication · Industrial Maintenance · Specialist Field Services</p>
+      </div>
+      <div class="group-entity combined">
+        <h4>Combined Capability</h4>
+        <p>Fully integrated design-and-build under one trusted group — from FEED to mechanical completion.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-band" id="contact">
+  <h2>Ready to Mobilise.</h2>
+  <p>With an established fabrication yard, a proven field operations team, and an unblemished safety record — let's discuss your project.</p>
+  <div class="cta-actions">
+    <a href="mailto:admin@kohasaconst.com" class="btn btn-white">Email Construction</a>
+    <a href="tel:+2348139002976" class="btn btn-outline-white">+234 813 900 2976</a>
+  </div>
+</div>
+
+<!-- Sister bar -->
+<div class="sister-bar">
+  <p>Also part of the Kohasa Group</p>
+  <a href="/kohasaeng-homepage">← Kohasa Engineering</a>
+  <a href="/">Group Overview</a>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="https://drive.google.com/thumbnail?id=149LEx84gGeRgpYw9gJ3u1e4w8W-I6AcC&sz=w600" alt="Kohasa Construction"
+           style="height:72px;width:auto;max-width:180px;object-fit:contain;margin-bottom:16px;
+                  display:block;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges"
+           loading="lazy"
+           onerror="this.style.display='none'">
+      <!-- Text fallback only shows if logo fails -->
+      <noscript><div class="footer-brand-name">KOHASA</div><span class="footer-brand-sub">C O N S T R U C T I O N</span></noscript>
+      <p>Kohasa Construction Company Limited. Specialist construction, fabrication, installation, and industrial maintenance contractor. Port Harcourt & Lagos, Nigeria.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="#services">Construction & Fabrication</a></li>
+        <li><a href="#services">Industrial Maintenance</a></li>
+        <li><a href="#services">Specialist Field Services</a></li>
+        <li><a href="#capabilities">Technical Capabilities</a></li>
+        <li><a href="/qhse">HSE / QHSE</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="/projects-overview">Projects</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="/qhse">QHSE & Credentials</a></li>
+        <li><a href="https://kohasaeng.com/career">Careers</a></li>
+        <li><a href="/kohasaeng-homepage">Kohasa Engineering</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Offices</h5>
+      <ul>
+        <li><a href="#">Plot 474, Trans-Amadi Industrial Layout, Port Harcourt</a></li>
+        <li><a href="#">Fabrication Yard: Rumuodrikrike, Elelenwo, Port Harcourt</a></li>
+        <li><a href="#">AVM Multiplex, Km 14 Lekki–Epe Expressway, Lagos</a></li>
+        <li><a href="tel:+2348139002976">+234 813 900 2976</a></li>
+        <li><a href="mailto:admin@kohasaconst.com">admin@kohasaconst.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Kohasa Construction Company Limited. All rights reserved.</p>
+    <p>Part of the <a href="/">Kohasa Group</a></p>
+  </div>
+</footer>
+
+<script>
+function closeMobileNav(){document.getElementById('navToggle').classList.remove('open');document.getElementById('mobileNav').classList.remove('open')}
+document.getElementById('navToggle').addEventListener('click',function(){this.classList.toggle('open');document.getElementById('mobileNav').classList.toggle('open')});
+document.getElementById('navClose').addEventListener('click',closeMobileNav);
+// Close on anchor click
+document.querySelectorAll('.mobile-nav a[href^="#"]').forEach(a=>a.addEventListener('click',closeMobileNav));
+</script>
+</body>
+</html>

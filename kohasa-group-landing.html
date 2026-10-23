@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kohasa Group — Engineering & Construction</title>
+<meta name="description" content="Kohasa Group of Companies — specialist engineering and construction for oil and gas across Nigeria. Kohasa Engineering and Kohasa Construction. Est. 2003, Port Harcourt.">
+<meta property="og:title" content="Kohasa Group — Engineering & Construction">
+<meta property="og:description" content="One Team, Two Paths, Endless Possibilities. Kohasa Group — Specialist engineering and construction for oil and gas across Nigeria.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:#0B1C35;color:#0E1823;font-family:'Barlow',sans-serif;overflow-x:hidden;min-height:100vh}
+img{max-width:100%;height:auto;display:block}
+:root{
+  --blue-900:#0B1C35;--blue-800:#102747;--blue-700:#163660;
+  --blue-600:#1C4A82;--blue-500:#2260A8;--blue-400:#3A7BC8;
+  --blue-300:#6BA3DC;--blue-100:#E8F0FA;--blue-50:#F3F7FD;
+  --ink:#0E1823;--ink2:#2D3A48;--mist:#5E6E82;
+  --silver:#C8D4E0;--bg:#F5F7FA;--bg2:#FFFFFF;--bg3:#EDF1F7;
+  --font-display:'Bebas Neue',sans-serif;
+  --font-condensed:'Barlow Condensed',sans-serif;
+  --border:rgba(34,96,168,0.15);
+  --border-dark:rgba(107,163,220,0.12);
+}
+
+/* ── HEADER ── */
+header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px 64px;border-bottom:1px solid var(--border-dark);
+  background:var(--blue-900);position:relative;z-index:10;
+  flex-wrap:wrap;gap:12px;
+}
+.header-logos{display:flex;align-items:center;gap:0}
+.header-logo-link{
+  display:flex;align-items:center;justify-content:center;
+  padding:6px 22px;text-decoration:none;
+  border-right:1px solid var(--border-dark);
+  transition:background 0.2s;
+}
+.header-logo-link:first-child{padding-left:0}
+.header-logo-link:last-child{border-right:none}
+.header-logo-link:hover{background:rgba(255,255,255,0.04)}
+.header-logo-link img{
+  height:44px;width:auto;object-fit:contain;display:block;
+  transition:opacity 0.2s;
+}
+.header-logo-link:hover img{opacity:0.8}
+/* Group name text link */
+.group-name-link{
+  display:flex;flex-direction:column;line-height:1;gap:3px;
+  padding:6px 22px;text-decoration:none;border-right:1px solid var(--border-dark);
+  transition:background 0.2s;
+}
+.group-name-link:hover{background:rgba(255,255,255,0.04)}
+.group-name-link .gn{font-family:var(--font-display);font-size:clamp(16px,2vw,22px);letter-spacing:0.06em;color:#fff;line-height:1}
+.group-name-link .gs{font-family:var(--font-condensed);font-size:9px;letter-spacing:0.24em;color:var(--blue-400);text-transform:uppercase;margin-top:3px}
+/* Header contact */
+.header-contact{font-family:var(--font-condensed);font-size:12px}
+.contact-grid{display:flex;gap:24px;justify-content:flex-end;flex-wrap:wrap}
+.contact-item .label{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(107,163,220,0.55);margin-bottom:2px}
+.contact-item .val a{color:var(--blue-300);text-decoration:none;transition:color 0.2s;font-size:12px}
+.contact-item .val a:hover{color:#fff}
+
+/* ── Group nav bar ── */
+.group-bar{
+  background:var(--blue-800);border-bottom:1px solid var(--border-dark);
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:10px 40px;
+  font-family:var(--font-condensed);font-size:11px;letter-spacing:0.22em;text-transform:uppercase;
+}
+.group-bar a{
+  color:rgba(107,163,220,0.75);text-decoration:none;
+  padding:4px 14px;border:1px solid rgba(107,163,220,0.15);border-radius:2px;
+  transition:all 0.2s;
+}
+.group-bar a:hover{color:#fff;border-color:rgba(107,163,220,0.5)}
+.group-bar .sep{color:rgba(107,163,220,0.2)}
+
+/* ── HERO ── */
+.hero{
+  position:relative;min-height:56vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:80px 40px 64px;
+  background:linear-gradient(160deg,var(--blue-900) 0%,var(--blue-800) 60%,var(--blue-900) 100%);
+  overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity:1;
+}
+/* Radial glow behind hero text */
+.hero::after{
+  content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:900px;height:500px;
+  background:radial-gradient(ellipse,rgba(34,96,168,0.18) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero-est{
+  font-family:var(--font-condensed);font-size:11px;letter-spacing:0.38em;
+  text-transform:uppercase;color:rgba(107,163,220,0.75);
+  margin-bottom:22px;position:relative;z-index:1;
+  opacity:0;animation:fadeUp 0.6s ease forwards 0.2s;
+}
+.hero-title{
+  font-family:var(--font-display);
+  font-size:clamp(52px,9vw,128px);
+  line-height:0.88;letter-spacing:0.02em;color:#fff;
+  position:relative;z-index:1;
+  opacity:0;animation:fadeUp 0.8s ease forwards 0.4s;
+}
+.hero-title em{font-style:normal;color:var(--blue-300);display:block}
+.hero-divider{
+  width:48px;height:2px;background:var(--blue-500);
+  margin:28px auto 0;position:relative;z-index:1;
+  opacity:0;animation:fadeIn 1s ease forwards 0.9s;
+}
+
+/* ── ENDLESS POSSIBILITIES — main group statement ── */
+.possibilities{
+  background:var(--blue-900);
+  position:relative;overflow:hidden;
+  border-top:1px solid var(--border-dark);
+}
+/* Architectural grid lines */
+.possibilities::before{
+  content:'';position:absolute;inset:0;
+  background:
+    linear-gradient(rgba(107,163,220,0.04) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(107,163,220,0.04) 1px,transparent 1px);
+  background-size:80px 80px;
+  pointer-events:none;
+}
+/* Top fade */
+.possibilities::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:80px;
+  background:linear-gradient(var(--blue-900),transparent);
+  pointer-events:none;z-index:1;
+}
+
+.poss-inner{
+  max-width:1280px;margin:0 auto;
+  padding:96px 64px 80px;
+  position:relative;z-index:2;
+}
+
+/* Eyebrow */
+.poss-eyebrow{
+  font-family:var(--font-condensed);font-size:11px;letter-spacing:0.38em;
+  text-transform:uppercase;color:var(--blue-400);
+  display:flex;align-items:center;gap:14px;margin-bottom:28px;
+}
+.poss-eyebrow::before{content:'';width:32px;height:1px;background:var(--blue-500);flex-shrink:0}
+
+/* Main heading */
+.poss-heading{
+  font-family:var(--font-display);
+  font-size:clamp(56px,8vw,120px);
+  line-height:0.88;letter-spacing:0.02em;color:#fff;
+  margin-bottom:0;
+}
+.poss-heading em{font-style:normal;color:var(--blue-300)}
+
+/* Horizontal rule */
+.poss-rule{
+  width:100%;height:1px;background:var(--border-dark);
+  margin:56px 0;
+}
+
+/* Two-column layout beneath heading */
+.poss-cols{
+  display:grid;grid-template-columns:1.1fr 1fr;
+  gap:80px;align-items:start;
+}
+
+/* Left col — group description */
+.poss-body{
+  font-size:16px;font-weight:300;color:rgba(255,255,255,0.6);
+  line-height:1.85;
+}
+.poss-body strong{color:rgba(255,255,255,0.9);font-weight:500}
+
+/* Division entry links */
+.division-entries{
+  display:flex;flex-direction:column;gap:2px;
+  margin-top:44px;
+}
+.div-entry{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:22px 28px;
+  border:1px solid var(--border-dark);
+  text-decoration:none;
+  transition:all 0.3s ease;
+  position:relative;overflow:hidden;
+  background:rgba(255,255,255,0.02);
+}
+.div-entry::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:2px;
+  background:linear-gradient(180deg,var(--blue-500),var(--blue-400));
+  transform:scaleY(0);transform-origin:top;transition:transform 0.35s ease;
+}
+.div-entry:first-child{border-radius:4px 4px 0 0}
+.div-entry:last-child{border-radius:0 0 4px 4px}
+.div-entry:hover{
+  border-color:rgba(107,163,220,0.3);
+  background:rgba(255,255,255,0.04);
+}
+.div-entry:hover::before{transform:scaleY(1)}
+.div-entry-left{display:flex;align-items:center;gap:20px}
+.div-entry-logo{height:36px;width:auto;object-fit:contain;flex-shrink:0;opacity:0.9;transition:opacity 0.2s}
+.div-entry:hover .div-entry-logo{opacity:1}
+.div-entry-text{}
+.div-entry-name{
+  font-family:var(--font-condensed);font-size:16px;font-weight:600;
+  letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.85);
+  transition:color 0.2s;
+}
+.div-entry:hover .div-entry-name{color:#fff}
+.div-entry-desc{
+  font-family:var(--font-condensed);font-size:11px;letter-spacing:0.06em;
+  color:rgba(107,163,220,0.55);margin-top:3px;
+}
+.div-entry-arrow{
+  font-family:var(--font-condensed);font-size:11px;letter-spacing:0.16em;
+  text-transform:uppercase;color:var(--blue-400);
+  display:flex;align-items:center;gap:8px;flex-shrink:0;
+  transition:gap 0.3s,color 0.2s;
+}
+.div-entry:hover .div-entry-arrow{gap:14px;color:var(--blue-300)}
+.div-entry-arrow svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
+
+/* Right col — stats */
+.poss-stats{display:flex;flex-direction:column;gap:2px}
+.poss-stat{
+  padding:28px 32px;
+  border:1px solid var(--border-dark);
+  background:rgba(255,255,255,0.02);
+  transition:border-color 0.3s;
+}
+.poss-stat:first-child{border-radius:4px 4px 0 0}
+.poss-stat:last-child{border-radius:0 0 4px 4px}
+.poss-stat:hover{border-color:rgba(107,163,220,0.3)}
+.poss-stat-num{
+  font-family:var(--font-display);font-size:clamp(36px,4vw,52px);
+  color:var(--blue-300);line-height:1;margin-bottom:4px;
+}
+.poss-stat-lbl{
+  font-family:var(--font-condensed);font-size:10px;letter-spacing:0.2em;
+  text-transform:uppercase;color:rgba(107,163,220,0.45);
+}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--blue-900);
+  border-top:1px solid var(--border-dark);
+  padding:32px 64px;
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:16px;
+}
+.footer-copy{font-family:var(--font-condensed);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(107,163,220,0.35)}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-links a{font-family:var(--font-condensed);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(107,163,220,0.5);text-decoration:none;transition:color 0.2s}
+.footer-links a:hover{color:var(--blue-300)}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1100px){
+  .poss-inner{padding:80px 40px 64px}
+  .poss-cols{gap:48px}
+  footer{padding:28px 40px}
+}
+@media(max-width:900px){
+  .poss-cols{grid-template-columns:1fr;gap:40px}
+  .poss-stats{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+  .poss-stat:first-child{border-radius:4px 0 0 0}
+  .poss-stat:nth-child(2){border-radius:0 4px 0 0}
+  .poss-stat:nth-child(3){border-radius:0 0 0 4px}
+  .poss-stat:last-child{border-radius:0 0 4px 0}
+}
+@media(max-width:768px){
+  header{padding:14px 20px;flex-direction:column;align-items:flex-start;gap:12px}
+  .header-logos{width:100%}
+  .header-logo-link,.group-name-link{padding:4px 12px;flex:1;justify-content:center}
+  .header-logo-link:first-child{padding-left:6px}
+  .header-logo-link img{height:32px}
+  .contact-grid{gap:12px}
+  .group-bar{padding:8px 20px;font-size:10px;gap:6px;flex-wrap:wrap;justify-content:center}
+  .group-bar a{padding:3px 10px}
+  .hero{padding:64px 24px 52px;min-height:auto}
+  .hero-title{font-size:clamp(44px,12vw,80px)}
+  .poss-inner{padding:64px 20px 52px}
+  .poss-heading{font-size:clamp(44px,10vw,80px)}
+  .poss-rule{margin:40px 0}
+  .div-entry{padding:18px 20px}
+  .div-entry-logo{height:28px}
+  .poss-stats{grid-template-columns:1fr 1fr}
+  .poss-stat{padding:22px 20px}
+  footer{padding:24px 20px;flex-direction:column;align-items:flex-start;gap:12px}
+}
+@media(max-width:480px){
+  .header-logo-link img{height:28px}
+  .header-logo-link,.group-name-link{padding:4px 8px}
+  .hero-title{font-size:clamp(38px,11vw,64px)}
+  .poss-heading{font-size:clamp(38px,11vw,64px)}
+  .poss-stats{grid-template-columns:1fr}
+  .poss-stat:first-child,.poss-stat:nth-child(2),.poss-stat:nth-child(3),.poss-stat:last-child{border-radius:0}
+  .poss-stat:first-child{border-radius:4px 4px 0 0}
+  .poss-stat:last-child{border-radius:0 0 4px 4px}
+  .div-entry{flex-wrap:wrap;gap:12px}
+  .footer-links{gap:12px}
+}
+
+/* ===== REVIEW PATCH: dark theme + red accent + ISO + bold ===== */
+:root{
+  --red:#C0392B;--red-light:#E74C3C;--red-dark:#96281B;
+}
+body{background:#0B1C35 !important;color:#E8EEF5 !important}
+
+/* Dark nav/header overrides */
+nav, .site-nav, .nav-bar, header.site-header, .top-bar{
+  background:#070F1C !important;
+  border-bottom-color:rgba(58,123,200,0.2) !important;
+}
+/* Bolder body text */
+p, li, td, .desc, .service-desc, .section-body, .content-body{
+  font-weight:500 !important;
+}
+/* Justified text on descriptions */
+.service-desc, .card-desc, .section-desc, .intro-text, .page-intro,
+.service-body p, .content p, .hero-sub, .about-text{
+  text-align:justify !important;
+}
+/* Red accent on CTA buttons */
+.btn-primary, .cta-btn, .nav-cta, a.btn{
+  background:var(--red) !important;
+  border-color:var(--red-dark) !important;
+}
+.btn-primary:hover, .cta-btn:hover{
+  background:var(--red-dark) !important;
+}
+/* Red top-accent on cards */
+.service-card::before, .project-card::before, .capability-card::before{
+  background:linear-gradient(90deg,var(--red),var(--blue-400)) !important;
+}
+/* ISO strip — injected on every page */
+.iso-global-strip{
+  background:#070F1C;
+  border-top:3px solid var(--red);
+  border-bottom:1px solid rgba(58,123,200,0.15);
+  padding:18px 48px;
+  text-align:center;
+}
+.iso-global-inner{
+  max-width:1200px;margin:0 auto;
+  display:flex;align-items:center;justify-content:center;
+  flex-wrap:wrap;gap:0;
+}
+.iso-global-label{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:9px;letter-spacing:0.3em;text-transform:uppercase;
+  color:var(--red-light);margin-right:24px;white-space:nowrap;
+}
+.iso-global-cert{
+  display:flex;flex-direction:column;align-items:center;
+  padding:0 20px;
+}
+.iso-global-num{
+  font-family:'Bebas Neue',sans-serif;font-size:17px;
+  color:#fff;letter-spacing:0.05em;line-height:1;
+}
+.iso-global-desc{
+  font-family:'Barlow Condensed',sans-serif;font-size:8px;
+  letter-spacing:0.14em;text-transform:uppercase;color:#5E8AAD;
+  margin-top:2px;
+}
+.iso-global-sep{width:1px;height:30px;background:rgba(58,123,200,0.2)}
+@media(max-width:640px){
+  .iso-global-strip{padding:14px 12px}
+  .iso-global-cert{padding:0 10px}
+  .iso-global-num{font-size:14px}
+  .iso-global-label{margin-right:10px;font-size:8px}
+}
+/* ===== END REVIEW PATCH ===== */
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-logos">
+    <a href="/kohasaeng-homepage" class="header-logo-link" title="Kohasa Engineering">
+      <img src="https://drive.google.com/thumbnail?id=1r__-mLttRfHxNnIBa6eSXWG81jdgNF5y&sz=w400"
+           alt="Kohasa Engineering" height="44" loading="eager">
+    </a>
+    <a href="/kohasaconstruction-homepage" class="header-logo-link" title="Kohasa Construction">
+      <img src="https://drive.google.com/thumbnail?id=149LEx84gGeRgpYw9gJ3u1e4w8W-I6AcC&sz=w400"
+           alt="Kohasa Construction" height="44" loading="eager"
+           onerror="this.style.opacity='0.35'">
+    </a>
+    <a href="/" class="group-name-link" title="Kohasa Group of Companies">
+      <span class="gn">KOHASA</span>
+      <span class="gs">Group of Companies</span>
+    </a>
+  </div>
+  <div class="header-contact">
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="label">Engineering</div>
+        <div class="val"><a href="mailto:info@kohasaeng.com">info@kohasaeng.com</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="label">Construction</div>
+        <div class="val"><a href="mailto:admin@kohasaconst.com">admin@kohasaconst.com</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="label">Contact Tel.</div>
+        <div class="val"><a href="tel:+2348139002976">+234 813 900 2976</a></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Group nav bar -->
+<div class="group-bar">
+  <a href="/">Kohasa Group</a>
+  <span class="sep">·</span>
+  <a href="/kohasaeng-homepage">Kohasa Engineering</a>
+  <span class="sep">·</span>
+  <a href="/kohasaconstruction-homepage">Kohasa Construction</a>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="hero-est">Est. 2003 · Port Harcourt, Nigeria</p>
+    <h1 class="hero-title">ONE TEAM, TWO PATHS.<em>ENDLESS POSSIBILITIES.</em></h1>
+    <div class="hero-divider"></div>
+  </section>
+
+  <!-- ENDLESS POSSIBILITIES — group-level statement with Engineering/Construction wording integrated -->
+  <section class="possibilities">
+    <div class="poss-inner">
+
+      <p class="poss-eyebrow">Kohasa Group of Companies</p>
+
+      <h2 class="poss-heading">ENDLESS<em>POSSIBILITIES.</em></h2>
+
+      <div class="poss-rule"></div>
+
+      <div class="poss-cols">
+
+        <!-- Left: group description + division entry links -->
+        <div>
+          <p class="poss-body">
+            Twenty years of <strong>engineering excellence</strong> and <strong>construction capability</strong> — delivered through two specialist divisions operating as one unified team across Nigeria's oil and gas landscape.
+          </p>
+          <p class="poss-body" style="margin-top:18px">
+            From <strong>conceptual engineering design</strong> and project management through to <strong>onshore and offshore construction</strong>, fabrication, installation, and industrial maintenance — the Kohasa Group offers a rare integrated capability, end to end.
+          </p>
+
+          <!-- Division entry links replace the old card section -->
+          <div class="division-entries">
+            <a href="/kohasaeng-homepage" class="div-entry">
+              <div class="div-entry-left">
+                <img src="https://drive.google.com/thumbnail?id=1r__-mLttRfHxNnIBa6eSXWG81jdgNF5y&sz=w400"
+                     alt="Kohasa Engineering" class="div-entry-logo"
+                     onerror="this.style.display='none'">
+                <div class="div-entry-text">
+                  <div class="div-entry-name">Kohasa Engineering</div>
+                  <div class="div-entry-desc">Engineering Design · PMC · Procurement · Construction Management</div>
+                </div>
+              </div>
+              <span class="div-entry-arrow">
+                Enter <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+            </a>
+            <a href="/kohasaconstruction-homepage" class="div-entry">
+              <div class="div-entry-left">
+                <img src="https://drive.google.com/thumbnail?id=149LEx84gGeRgpYw9gJ3u1e4w8W-I6AcC&sz=w400"
+                     alt="Kohasa Construction" class="div-entry-logo"
+                     onerror="this.style.opacity='0.35'">
+                <div class="div-entry-text">
+                  <div class="div-entry-name">Kohasa Construction</div>
+                  <div class="div-entry-desc">Construction · Fabrication · Industrial Maintenance · Field Services</div>
+                </div>
+              </div>
+              <span class="div-entry-arrow">
+                Enter <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: stats -->
+        <div class="poss-stats">
+          <div class="poss-stat">
+            <div class="poss-stat-num">20+</div>
+            <div class="poss-stat-lbl">Years of Experience</div>
+          </div>
+          <div class="poss-stat">
+            <div class="poss-stat-num">2</div>
+            <div class="poss-stat-lbl">Specialist Divisions</div>
+          </div>
+          <div class="poss-stat">
+            <div class="poss-stat-num">0</div>
+            <div class="poss-stat-lbl">LTI — 5-Year Record</div>
+          </div>
+          <div class="poss-stat">
+            <div class="poss-stat-num">ISO</div>
+            <div class="poss-stat-lbl">Certified Operations</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span class="footer-copy">© 2026 Kohasa Group · Est. 2003 · Port Harcourt, Nigeria</span>
+  <div class="footer-links">
+    <a href="/kohasaeng-homepage">Kohasa Engineering</a>
+    <a href="/kohasaconstruction-homepage">Kohasa Construction</a>
+    <a href="mailto:info@kohasaeng.com">info@kohasaeng.com</a>
+    <a href="mailto:admin@kohasaconst.com">admin@kohasaconst.com</a>
+  </div>
+</footer>
+
+</body>
+</html>

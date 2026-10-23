@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kohasa Group — Engineering & Construction</title>
+<meta name="description" content="Kohasa Group of Companies — two specialist divisions: Kohasa Engineering and Kohasa Construction. Over two decades of oil and gas excellence in Nigeria.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue-900:#0B1F3A;--blue-800:#112D54;--blue-700:#1A3D6E;
+  --blue-600:#1E4D8C;--blue-500:#2563B0;--blue-400:#3B7DD8;
+  --blue-100:#E8F0FB;--blue-50:#F0F5FD;
+  --ink:#111827;--ink2:#374151;--mist:#6B7280;
+  --bg:#F9FAFB;--bg2:#FFFFFF;--bg3:#F3F4F6;--border:#E5E7EB;
+  --gold:#B8860E;--gold-l:#D4A017;
+  --font-display:'Bebas Neue',sans-serif;
+  --font-condensed:'Barlow Condensed',sans-serif;
+  --font-body:'Barlow',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--blue-900);color:#F9FAFB;font-family:var(--font-body);min-height:100vh;overflow-x:hidden}
+
+/* ── Background texture ── */
+body::before{content:'';position:fixed;inset:0;
+  background:
+    radial-gradient(ellipse 70% 50% at 15% 10%,rgba(37,99,176,0.25) 0%,transparent 60%),
+    radial-gradient(ellipse 60% 60% at 85% 90%,rgba(11,31,58,0.8) 0%,transparent 60%),
+    repeating-linear-gradient(0deg,transparent,transparent 60px,rgba(255,255,255,0.015) 60px,rgba(255,255,255,0.015) 61px),
+    repeating-linear-gradient(90deg,transparent,transparent 80px,rgba(255,255,255,0.01) 80px,rgba(255,255,255,0.01) 81px);
+  pointer-events:none;z-index:0}
+
+/* ── Header ── */
+header{position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:28px 60px;border-bottom:1px solid rgba(59,125,216,0.2)}
+.logo-wrap{display:flex;align-items:center;gap:14px}
+.logo-wrap img{height:48px;width:auto;filter:brightness(1.2)}
+.logo-text{display:flex;flex-direction:column;line-height:1}
+.logo-text .brand{font-family:var(--font-display);font-size:26px;letter-spacing:0.06em;color:#F9FAFB}
+.logo-text .tagline{font-family:var(--font-condensed);font-size:10px;letter-spacing:0.22em;color:var(--blue-400);text-transform:uppercase;margin-top:3px}
+.header-contact{font-family:var(--font-condensed);font-size:12px;letter-spacing:0.06em;color:rgba(249,250,251,0.55);text-align:right;line-height:1.7}
+.header-contact a{color:var(--blue-300);text-decoration:none;transition:color 0.2s}
+.header-contact a:hover{color:#fff}
+.contact-pair{display:flex;flex-direction:column;gap:2px}
+.contact-pair .contact-label{font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue-400)}
+
+/* ── Hero ── */
+.hero{position:relative;z-index:1;min-height:50vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 24px 60px}
+.hero-eyebrow{font-family:var(--font-condensed);font-size:11px;letter-spacing:0.35em;color:var(--blue-400);text-transform:uppercase;margin-bottom:20px;opacity:0;animation:fadeUp 0.8s ease forwards 0.2s}
+.hero-title{font-family:var(--font-display);font-size:clamp(48px,8vw,100px);line-height:0.92;letter-spacing:0.02em;color:#F9FAFB;opacity:0;animation:fadeUp 0.9s ease forwards 0.4s}
+.hero-title span{color:var(--blue-400);display:block}
+.hero-sub{font-family:var(--font-body);font-size:16px;font-weight:300;color:rgba(249,250,251,0.6);max-width:540px;line-height:1.75;margin-top:24px;opacity:0;animation:fadeUp 0.9s ease forwards 0.6s}
+.hero-divider{width:60px;height:2px;background:linear-gradient(90deg,transparent,var(--blue-400),transparent);margin:32px auto 0;opacity:0;animation:fadeIn 1s ease forwards 0.9s}
+
+/* ── Division cards ── */
+.divisions{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:3px;max-width:1200px;margin:56px auto 0;padding:0 40px}
+.division-card{position:relative;background:rgba(17,45,84,0.7);border:1px solid rgba(59,125,216,0.2);padding:52px 48px 48px;text-decoration:none;color:inherit;overflow:hidden;transition:border-color 0.4s,transform 0.3s,background 0.3s;display:block;backdrop-filter:blur(4px)}
+.division-card:nth-child(1){border-radius:8px 0 0 8px}
+.division-card:nth-child(2){border-radius:0 8px 8px 0}
+.division-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(37,99,176,0.12) 0%,transparent 60%);opacity:0;transition:opacity 0.4s}
+.division-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--blue-400),transparent);transform:scaleX(0);transition:transform 0.4s}
+.division-card:hover{border-color:rgba(59,125,216,0.5);transform:translateY(-4px);background:rgba(26,61,110,0.8)}
+.division-card:hover::before{opacity:1}
+.division-card:hover::after{transform:scaleX(1)}
+.card-number{font-family:var(--font-display);font-size:80px;line-height:1;color:rgba(59,125,216,0.06);position:absolute;top:16px;right:32px;transition:color 0.4s}
+.division-card:hover .card-number{color:rgba(59,125,216,0.14)}
+.card-icon{width:48px;height:48px;border:1px solid rgba(59,125,216,0.35);border-radius:6px;display:flex;align-items:center;justify-content:center;margin-bottom:26px;background:rgba(37,99,176,0.1);transition:border-color 0.3s,background 0.3s}
+.division-card:hover .card-icon{border-color:var(--blue-400);background:rgba(37,99,176,0.2)}
+.card-icon svg{width:22px;height:22px;stroke:var(--blue-400);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.card-label{font-family:var(--font-condensed);font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:var(--blue-400);margin-bottom:8px}
+.card-title{font-family:var(--font-display);font-size:40px;line-height:1;letter-spacing:0.02em;color:#F9FAFB;margin-bottom:16px}
+.card-desc{font-size:14px;font-weight:300;color:rgba(249,250,251,0.6);line-height:1.75;margin-bottom:28px;max-width:340px}
+.card-services{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:32px}
+.service-pill{font-family:var(--font-condensed);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(249,250,251,0.5);border:1px solid rgba(59,125,216,0.2);border-radius:3px;padding:4px 9px;transition:border-color 0.3s,color 0.3s}
+.division-card:hover .service-pill{border-color:rgba(59,125,216,0.4);color:rgba(249,250,251,0.8)}
+.card-cta{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-condensed);font-size:12px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--blue-400);transition:gap 0.3s,color 0.3s}
+.division-card:hover .card-cta{gap:16px;color:#F9FAFB}
+.card-cta svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
+
+/* ── Stats bar ── */
+.stats-bar{position:relative;z-index:1;display:flex;justify-content:center;max-width:1200px;margin:56px auto 0;padding:0 40px;border-top:1px solid rgba(59,125,216,0.15);border-bottom:1px solid rgba(59,125,216,0.15)}
+.stat-item{flex:1;padding:32px 20px;text-align:center;border-right:1px solid rgba(59,125,216,0.12);opacity:0;animation:fadeUp 0.6s ease forwards}
+.stat-item:last-child{border-right:none}
+.stat-item:nth-child(1){animation-delay:0.9s}
+.stat-item:nth-child(2){animation-delay:1.0s}
+.stat-item:nth-child(3){animation-delay:1.1s}
+.stat-item:nth-child(4){animation-delay:1.2s}
+.stat-number{font-family:var(--font-display);font-size:36px;color:var(--blue-400);line-height:1}
+.stat-label{font-family:var(--font-condensed);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(249,250,251,0.4);margin-top:6px}
+
+/* ── Footer ── */
+footer{position:relative;z-index:1;text-align:center;padding:48px 24px;margin-top:56px;border-top:1px solid rgba(59,125,216,0.12)}
+footer p{font-family:var(--font-condensed);font-size:11px;letter-spacing:0.12em;color:rgba(249,250,251,0.35);text-transform:uppercase}
+footer a{color:var(--blue-400);text-decoration:none;transition:color 0.2s}
+footer a:hover{color:#fff}
+
+/* ── Animations ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* ── Responsive ── */
+@media(max-width:900px){
+  header{padding:20px 24px;flex-wrap:wrap;gap:16px}
+  .logo-wrap img{height:40px}
+  .logo-text .brand{font-size:22px}
+  .header-contact{text-align:left;font-size:11px}
+  .divisions{grid-template-columns:1fr;padding:0 24px;gap:3px}
+  .division-card:nth-child(1){border-radius:8px 8px 0 0}
+  .division-card:nth-child(2){border-radius:0 0 8px 8px}
+  .division-card{padding:36px 28px}
+  .card-title{font-size:34px}
+  .stats-bar{flex-wrap:wrap;padding:0 24px}
+  .stat-item{flex:1 1 50%;border-right:none;border-bottom:1px solid rgba(59,125,216,0.12)}
+  .stat-item:nth-child(odd){border-right:1px solid rgba(59,125,216,0.12)}
+  .hero{padding:60px 24px 40px}
+}
+@media(max-width:480px){
+  header{padding:16px 20px}
+  .logo-text .brand{font-size:20px}
+  .header-contact .contact-pair{display:none}
+  .divisions{padding:0 16px}
+  .division-card{padding:28px 20px}
+  .card-number{font-size:60px;top:12px;right:20px}
+  .card-title{font-size:30px}
+  .hero-title{font-size:clamp(40px,12vw,60px)}
+  .stats-bar{padding:0 16px}
+  .stat-item{flex:1 1 50%}
+  .stat-number{font-size:28px}
+}
+
+/* ===== REVIEW PATCH: dark theme + red accent + ISO + bold ===== */
+:root{
+  --red:#C0392B;--red-light:#E74C3C;--red-dark:#96281B;
+}
+body{background:#0B1C35 !important;color:#E8EEF5 !important}
+
+/* Dark nav/header overrides */
+nav, .site-nav, .nav-bar, header.site-header, .top-bar{
+  background:#070F1C !important;
+  border-bottom-color:rgba(58,123,200,0.2) !important;
+}
+/* Bolder body text */
+p, li, td, .desc, .service-desc, .section-body, .content-body{
+  font-weight:500 !important;
+}
+/* Justified text on descriptions */
+.service-desc, .card-desc, .section-desc, .intro-text, .page-intro,
+.service-body p, .content p, .hero-sub, .about-text{
+  text-align:justify !important;
+}
+/* Red accent on CTA buttons */
+.btn-primary, .cta-btn, .nav-cta, a.btn{
+  background:var(--red) !important;
+  border-color:var(--red-dark) !important;
+}
+.btn-primary:hover, .cta-btn:hover{
+  background:var(--red-dark) !important;
+}
+/* Red top-accent on cards */
+.service-card::before, .project-card::before, .capability-card::before{
+  background:linear-gradient(90deg,var(--red),var(--blue-400)) !important;
+}
+/* ISO strip — injected on every page */
+.iso-global-strip{
+  background:#070F1C;
+  border-top:3px solid var(--red);
+  border-bottom:1px solid rgba(58,123,200,0.15);
+  padding:18px 48px;
+  text-align:center;
+}
+.iso-global-inner{
+  max-width:1200px;margin:0 auto;
+  display:flex;align-items:center;justify-content:center;
+  flex-wrap:wrap;gap:0;
+}
+.iso-global-label{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:9px;letter-spacing:0.3em;text-transform:uppercase;
+  color:var(--red-light);margin-right:24px;white-space:nowrap;
+}
+.iso-global-cert{
+  display:flex;flex-direction:column;align-items:center;
+  padding:0 20px;
+}
+.iso-global-num{
+  font-family:'Bebas Neue',sans-serif;font-size:17px;
+  color:#fff;letter-spacing:0.05em;line-height:1;
+}
+.iso-global-desc{
+  font-family:'Barlow Condensed',sans-serif;font-size:8px;
+  letter-spacing:0.14em;text-transform:uppercase;color:#5E8AAD;
+  margin-top:2px;
+}
+.iso-global-sep{width:1px;height:30px;background:rgba(58,123,200,0.2)}
+@media(max-width:640px){
+  .iso-global-strip{padding:14px 12px}
+  .iso-global-cert{padding:0 10px}
+  .iso-global-num{font-size:14px}
+  .iso-global-label{margin-right:10px;font-size:8px}
+}
+/* ===== END REVIEW PATCH ===== */
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-wrap">
+    <img src="https://drive.google.com/thumbnail?id=1r__-mLttRfHxNnIBa6eSXWG81jdgNF5y&sz=w400" alt="Kohasa Group Logo">
+    <div class="logo-text">
+      <span class="brand">KOHASA</span>
+      <span class="tagline">Group of Companies</span>
+    </div>
+  </div>
+  <div class="header-contact">
+    <div>+234 813 900 2976 &nbsp;·&nbsp; 474 Trans-Amadi Industrial Area, Port Harcourt</div>
+    <div class="contact-pair" style="display:flex;gap:24px;margin-top:4px;justify-content:flex-end">
+      <div>
+        <div class="contact-label">Engineering</div>
+        <a href="mailto:info@kohasaeng.com">info@kohasaeng.com</a>
+      </div>
+      <div>
+        <div class="contact-label">Construction</div>
+        <a href="mailto:admin@kohasaconst.com">admin@kohasaconst.com</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="hero-eyebrow">Est. 2003 · Port Harcourt, Nigeria</p>
+    <h1 class="hero-title">Engineering.<span>Construction.</span></h1>
+    <p class="hero-sub">Over two decades of unparalleled expertise in oil and gas engineering and construction across Nigeria's onshore and offshore landscape.</p>
+    <div class="hero-divider"></div>
+  </section>
+
+  <div class="divisions">
+    <a href="/kohasaeng-homepage" class="division-card">
+      <span class="card-number">01</span>
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <p class="card-label">Division One</p>
+      <h2 class="card-title">KOHASA<br>ENGINEERING</h2>
+      <p class="card-desc">Specialist engineering design and project management for the oil and gas industry — from conceptual design to FEED and beyond.</p>
+      <div class="card-services">
+        <span class="service-pill">Process Engineering</span><span class="service-pill">Civil & Structural Engineering</span>
+        <span class="service-pill">Piping & Pipeline</span><span class="service-pill">Mechanical & Electrical</span>
+        <span class="service-pill">PMC</span><span class="service-pill">Procurement</span>
+      </div>
+      <span class="card-cta">Visit KohasaEng<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+    </a>
+
+    <a href="/kohasaconstruction-homepage" class="division-card">
+      <span class="card-number">02</span>
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><polygon points="2 20 22 20 12 4 2 20"/><line x1="12" y1="14" x2="12" y2="18"/><line x1="10" y1="18" x2="14" y2="18"/></svg>
+      </div>
+      <p class="card-label">Division Two</p>
+      <h2 class="card-title">KOHASA<br>CONSTRUCTION</h2>
+      <p class="card-desc">End-to-end construction of onshore and offshore oil and gas production facilities, civil and structural works across Nigeria.</p>
+      <div class="card-services">
+        <span class="service-pill">Onshore Facilities</span><span class="service-pill">Offshore Facilities</span>
+        <span class="service-pill">Civil Construction</span><span class="service-pill">Structural Works</span>
+        <span class="service-pill">Shop Fabrication</span><span class="service-pill">Industrial Maintenance</span>
+      </div>
+      <span class="card-cta">Visit KohasaConstruction<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+    </a>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat-item"><div class="stat-number">20+</div><div class="stat-label">Years of Experience</div></div>
+    <div class="stat-item"><div class="stat-number">2</div><div class="stat-label">Specialist Divisions</div></div>
+    <div class="stat-item"><div class="stat-number">PH</div><div class="stat-label">Trans-Amadi, Port Harcourt</div></div>
+    <div class="stat-item"><div class="stat-number">ISO</div><div class="stat-label">Certified Operations</div></div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 Kohasa Group &nbsp;·&nbsp; <a href="/kohasaeng-homepage">KohasaEng</a> &nbsp;·&nbsp; <a href="/kohasaconstruction-homepage">KohasaConstruction</a> &nbsp;·&nbsp; <a href="mailto:info@kohasaeng.com">info@kohasaeng.com</a> &nbsp;·&nbsp; <a href="mailto:admin@kohasaconst.com">admin@kohasaconst.com</a></p>
+</footer>
+
+</body>
+</html>
